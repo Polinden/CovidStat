@@ -1,0 +1,25 @@
+#!/bin/bash
+
+dr="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+command -v python3 >> /dev/null
+res=$?
+
+if [[ $res -ne 0 ]]; then
+  echo "install python form"
+  echo "python.org"
+  exit 1
+else
+  echo "installing $dr/covid.tar.gz" 
+  pip3 install "$dr/covid.tar.gz"
+  res=$?
+  echo ""
+  echo ""
+  echo ""
+  if [[ $res -ne 0 ]]; then
+    echo "check for problems and errors!"
+    exit 1
+  fi
+  echo "now you can run conmmand:"
+  echo -e "\033[31mcovidstat\033[0m"
+  echo "covidstat World" > "$dr/covidworld"; chmod 777 "$dr/covidworld"
+fi
