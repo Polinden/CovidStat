@@ -1,9 +1,9 @@
 # CovidStat
 
 
-on mac just run 
-## runme
-scritp to install
+on your mac just run 
+## install
+scritp to install it,
 then run 
 ## covidstat
 in console
