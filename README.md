@@ -1,11 +1,10 @@
 # CovidStat
 
 
-on your mac just run 
+on your Mac or Linux PC run the following  script 
 ## install
-scritp to install it,
-then run 
+to install the program and required libs, then type and run 
 ## covidstat
-in console
+in console to use it
 
 
